@@ -1,0 +1,89 @@
+.container{
+    border: 1px solid red;
+    width: 70vw;
+}
+.header{
+    display: flex;
+    padding: 10px;
+    border: 1px solid red;
+}
+.heading{
+    flex: 1;
+}
+.menu{
+    flex: 2;
+}
+.menu span{
+    margin-left: 20px;
+}
+.content{
+    padding: 10px;
+    display: inline-flex;
+}
+.plogo{
+    flex: 1;
+}
+pdesc{
+    flex: 2;
+    margin-left: 500px;
+}
+.footer{
+    margin: 1px solid red;
+}.container{
+    border: 1px solid red;
+    width: 93vw;
+}
+.header{
+    display: flex;
+    padding: 10px;
+    border: 1px solid red;
+}
+.heading{
+    flex: 1;
+}
+.Menu{
+    flex: 2;
+}
+.Menu span{
+    margin-left: 20px;
+}
+.content{
+    padding: 10px;
+    display: inline-flex;
+}
+.plogo{
+    flex: 1;
+}
+.pdesc{
+    flex: 2;
+    margin-left: 900px;
+}
+.footer{
+    border: 1px solid red;
+}
+.sologos{
+    padding: 10px;
+    text-align: right;
+    margin-right: 100px;
+}
+.sologos i{
+    margin-right: 75px;
+}
+@media (max-width: 800px){ 
+    .menu { 
+        display: none; 
+    } 
+    .content{ 
+        display: block; 
+    } 
+    .pdesc{ 
+        margin-left: 0px; 
+    } 
+    .footer{ 
+        display: none; 
+    } 
+    .sologo{ 
+        text-align: center; 
+        margin-right: 90px; 
+    } 
+}
