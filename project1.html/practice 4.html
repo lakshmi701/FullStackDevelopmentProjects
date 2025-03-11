@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 30% 40% 30%;
+            grid-template-rows: 20% 60% 20%;
+            height: 100vh;
+        }
+        .apple {
+            background-color: red;
+            grid-column: 1 / -1;
+            grid-row: 2 / 4;
+        }
+        .mango {
+            background-color: yellow;
+            grid-column: 2 / 4;
+            grid-row: 2 / 3;
+        }
+        .grapes {
+            background-color: violet;
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+        }
+        .orange {
+            background-color: orange;
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        .banana {
+            background-color: yellowgreen;
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="apple">Apple</div>
+        <div class="mango">Mango</div>
+        <div class="grapes">Grapes</div>
+        <div class="orange">Orange</div>
+        <div class="banana">Banana</div>
+    </div>
+</body>
+</html>

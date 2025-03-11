@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Display</title>
+    <style>
+        *{
+            margin: 2px solid rgb(46, 108, 128);
+        }
+        .container>div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 80px;
+            font-display: white;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 30% 40% 30%;
+            grid-template-rows: 20% 60% 20%;
+            height: 100vh;
+        }
+        *{
+            margin: 5px;
+        }
+        .header
+        {
+            background-color: aqua;
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+        .navbar
+        {
+            background-color: chartreuse;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .content
+        {
+            background-color: blueviolet;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .aside
+        {
+         background-color: coral;
+         grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        .footer
+        {
+            background-color: darkturquoise;
+            grid-column: 1/4;
+            grid-row: 3/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="navbar">Navbar</div>
+        <div class="content">Content</div>
+        <div class="aside">Aside</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

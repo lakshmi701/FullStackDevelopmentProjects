@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Display</title>
+    <style>
+        *{
+            margin: 3px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 25% 25% 25%;
+            grid-template-rows: 25% 25% 25%;
+            height: 100vh;
+        }
+        .header{
+            background-color: papayawhip;
+            grid-column: 1/5;
+            grid-row: 1/2;
+        }
+        .smallbox1{
+            background-color: aqua;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .smallbox2{
+            background-color: aqua;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .smallbox3{
+            background-color: aqua;
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        .sidebar{
+            background-color: greenyellow;
+            grid-column: 4/5;
+            grid-row: 2/4;
+        }
+        .maincontent{
+            background-color: yellow;
+            grid-column: 1/4;
+            grid-row: 3/4;
+        }
+        .footer{
+            background-color: blue;
+            grid-column: 1/5;
+            grid-row: 4/5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="smallbox1">Small Box 1</div>    
+        <div class="smallbox2">Small Box 2</div>    
+        <div class="smallbox3">Small Box 3</div> 
+        <div class="sidebar">Side Bar</div>    
+        <div class="maincontent">Main Content</div>    
+        <div class="footer">Footer</div>            
+    </div>
+</body>
+</html>

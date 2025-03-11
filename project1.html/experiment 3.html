@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid display</title>
+    <style>
+        *{
+            margin: 5px;
+        }
+        .cointer4{
+            display: grid;
+            grid-template-columns:25% 25% 25% 25% ;
+            grid-template-rows:25% 25% 25% 25% ;
+            height: 100vh;
+        }
+        .h{
+            background-color: orange;
+            grid-column:1/5 ;
+            grid-row:1/2 ;
+        }
+        .s1{
+            background-color: aqua;
+            grid-column:1/2 ;
+            grid-row:2/3 ;
+        }
+        .s2{
+            background-color: aqua;
+            grid-column:2/3 ;
+            grid-row:2/3 ;
+        }
+        .s3{
+            background-color: aqua;
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        .main{
+            background-color: yellow;
+            grid-column:1/4 ;
+            grid-row: 3/4;
+
+        }
+        .sb{
+            background-color: green;
+            grid-column:4/5 ;
+            grid-row: 2/4 ;
+
+        }
+        .f{
+            background-color: blue;
+            grid-column:1/5 ;
+            grid-row: 4/5;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="cointer4">
+        <div class="h">Header</div>
+        <div class="s1">small box 1</div>
+        <div class="s2">small box 2</div>
+        <div class="s3">small box 3</div>
+        <div class="sb">Side Bar</div>
+        <div class="main">Main content</div>
+        <div class="f">Footer</div>
+    </div>
+</body>
+</html>
